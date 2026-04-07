@@ -90,7 +90,14 @@ body {
     display: none;
 }
    
+.cart-container:hover {
+    color: #ff7900 !important; /* Le panier devient orange au survol */
+    transition: 0.3s;
+}
 
+#cart-count {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
 
 
    
