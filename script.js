@@ -9,15 +9,6 @@ if(spanClose) {
     spanClose.onclick = function() { modal.style.display = "none"; }
 }
 
-const affichagePanier = document.getElementById('cart-count');
-// 1. Charger les produits au démarrage de la page
-async function chargerProduits() {
-    try {
-        const reponse = await fetch('products.json');
-        const produits = await reponse.json();
-        
-        const conteneur = document.getElementById('shop-container');
-        conteneur.innerHTML = ''; // Vide la zone avant d'ajouter
 
      
                 
