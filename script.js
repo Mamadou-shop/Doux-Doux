@@ -11,7 +11,7 @@ if(spanClose) {
 
 
      
-                
+               const grille = document.getElementById('product-grid'); 
               // Mise à jour de la fonction pour inclure Wave et Orange Money
 function genererCages() {
     grille.innerHTML = "";
