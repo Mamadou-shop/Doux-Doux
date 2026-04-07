@@ -19,165 +19,67 @@ async function chargerProduits() {
         const conteneur = document.getElementById('shop-container');
         conteneur.innerHTML = ''; // Vide la zone avant d'ajouter
 
-        produits.forEach(produit => {
-            const carte = document.createElement('div');
-            carte.className = 'product-card';
-            
-            carte.dataset.category = produit.categorie;
-
-            carte.innerHTML = `
-                <img src="${produit.image}" alt="${produit.nom}" onerror="this.src='https://via.placeholder.com/150'">
-                <h3>${produit.nom}</h3>
-                <p class="category">${produit.categorie}</p>
-                <p class="price">${produit.prix} FCFA</p>
+     
                 
-                <select id="operator-${produit.id}">
-                    <option value="wave">Wave</option>
-                    <option value="orange_money">Orange Money</option>
-                </select>
+              // Mise à jour de la fonction pour inclure Wave et Orange Money
+function genererCages() {
+    grille.innerHTML = "";
+
+    catalogueDouxDoux.forEach(produit => {
+        const cageHTML = `
+            <div class="product-card shadow-sm">
+                <div class="product-image" style="background: #eee; height: 280px; position: relative;">
+                    <img src="${produit.image}" alt="${produit.titre}" style="width:100%; height:100%; object-fit:cover;">
+                </div>
                 
-                <button onclick="payer(${produit.prix}, '${produit.id}')">
-                    Acheter maintenant
-                </button>
-            `;
-// 1. On récupère le bouton payer qui vient d'être créé dans le HTML de la carte
-        const boutonPayer = carte.querySelector('button'); 
+                <div class="product-info" style="padding: 15px;">
+                    <span class="category-tag" style="color: #666; font-size: 0.8rem;">${produit.categorie}</span>
+                    <h3 class="product-title" style="margin: 10px 0; font-size: 1.1rem;">${produit.titre}</h3>
+                    <p class="product-price" style="font-weight: bold; color: #2ecc71; font-size: 1.2rem;">${produit.prix} FCFA</p>
+                    
+                    <button class="btn-hero" style="width: 100%; margin-bottom: 10px; background: #333; color: white; border: none; padding: 10px; cursor: pointer;">
+                        🛒 Ajouter au panier
+                    </button>
 
-        // 2. On écoute le clic sur ce bouton
-        boutonPayer.addEventListener('click', () => {
-            // Augmenter le compteur d'articles
-            nombreArticles++; 
-            
-            // Mettre à jour l'affichage du chiffre 0 en haut
-            document.getElementById('cart-count').innerText = nombreArticles;
-            
-           // 1. Récupérer le mode de paiement choisi (Wave ou Orange Money)
-            const modePaiement = carte.querySelector('select').value;
-
-            // 2. Remplir les infos dans la fenêtre de paiement
-document.getElementById('order-details').innerText = `Produit : ${produit.nom} - Prix : ${produit.prix} FCFA`;
-
-console.log("La fenêtre devrait s'ouvrir maintenant !");
-
-modal.style.display = "block";
-        });
-
-        // Enfin, on ajoute la carte finie au conteneur
-        conteneur.appendChild(carte);
-      }); // <--- C'est la fin de ton forEach
-
-           
-    
-    } catch (erreur) {
-        console.error("Erreur de chargement des produits:", erreur);
-    }
-}
-
-// 2. Ta fonction de paiement adaptée
-async function payer(montant, idProduit) {
-    const operateur = document.getElementById(`operator-${idProduit}`).value;
-    
-    // On cherche le nom du produit dans la liste pour l'envoyer à PayTech
-    const nomProduit = idProduit; // On peut faire plus précis plus tard
-
-    const response = await fetch('/payment', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-            amount: montant,
-            item_name: nomProduit,
-            operator: operateur
-        })
+                    <div class="mobile-pay" style="display: flex; gap: 5px;">
+                        <button onclick="payerWave('${produit.titre}', '${produit.prix}')" style="flex: 1; background: #1da1f2; color: white; border: none; padding: 8px; border-radius: 4px; cursor: pointer; font-size: 0.8rem; font-weight: bold;">
+                            🌊 Wave
+                        </button>
+                        <button onclick="payerOM('${produit.titre}', '${produit.prix}')" style="flex: 1; background: #ff7900; color: white; border: none; padding: 8px; border-radius: 4px; cursor: pointer; font-size: 0.8rem; font-weight: bold;">
+                            🍊 Orange
+                        </button>
+                    </div>
+                </div>
+            </div>
+        `;
+        grille.innerHTML += cageHTML;
     });
+}
 
-    const data = await response.json();
-    if (data.success && data.redirect_url) {
-        window.location.href = data.redirect_url;
-    } else {
-        alert("Erreur lors de la création du paiement.");
-    }
+// Fonctions de simulation de paiement
+function payerWave(nom, prix) {
+    alert("Redirection vers Wave pour l'achat de : " + nom + "\nMontant : " + prix + " FCFA");
+}
+
+function payerOM(nom, prix) {
+    alert("Initialisation du paiement Orange Money pour : " + nom + "\nMontant : " + prix + " FCFA");
 }
 
 
-// --- FONCTIONNALITÉ DU BOUTON REMONTER ---
+    let mybutton = document.getElementById("btn-scroll-top");
 
-// On récupère le bouton via son ID
-const backToTop = document.getElementById("backToTop");
+// Quand l'utilisateur scrolle de 20px, on montre le bouton
+window.onscroll = function() {scrollFunction()};
 
-// On surveille le défilement de la page
-window.onscroll = function() {
-    // Si on a descendu de plus de 300 pixels
-    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-        backToTop.style.display = "block"; // On affiche le bouton
-    } else {
-        backToTop.style.display = "none";  // On cache le bouton
-    }
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// Quand on clique, on remonte en haut avec un effet fluide
+mybutton.onclick = function() {
+  window.scrollTo({top: 0, behavior: 'smooth'});
 };
-
-// Quand on clique sur le bouton
-backToTop.onclick = function() {
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth" // Remontée fluide et douce
-    });
-};
-
-// Sélection des boutons de filtre
-const filterBtns = document.querySelectorAll('.filter-btn');
-
-filterBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-        // Changer le bouton actif
-        document.querySelector('.filter-btn.active').classList.remove('active');
-        btn.classList.add('active');
-
-        const category = btn.getAttribute('data-category');
-        const products = document.querySelectorAll('.product-card');
-
-        products.forEach(product => {
-            // On vérifie si le produit appartient à la catégorie
-            // (Assure-toi que tes produits dans products.json ont une catégorie)
-            if (category === 'tous' || product.dataset.category === category) {
-                product.style.display = 'flex';
-            } else {
-                product.style.display = 'none';
-            }
-        });
-    });
-});
-// Lancer le chargement
-window.onload = chargerProduits;
-
-function confirmerPaiement() {
-    // Ton lien officiel Wave Business
-    const lienWaveBusiness = "https://pay.wave.com/m/M_sn_oPpmOm67pxb4/c/sn/";
-
-    // Redirection vers la page de paiement officielle
-    window.location.href = lienWaveBusiness;
-}
-
-function payerOrangeMoney() {
-    const details = document.getElementById('order-details').innerText;
-    const monNumeroOM = "777226359"; // Ton numéro Orange Money
-    
-    // Message pour t'envoyer la commande et demander ton QR Code
-    const message = "Bonjour BAANA-BAANA SHOP, je souhaite payer par Orange Money pour ma commande : " + details;
-    
-    // Ouvre ton WhatsApp directement
-    window.location.href = "https://wa.me/" + monNumeroOM + "?text=" + encodeURIComponent(message);
-}
-
-function afficherQROrange() {
-    // Cache les boutons et montre le QR Code
-    document.getElementById('qr-container').style.display = 'block';
-    document.getElementById('confirm-order').style.display = 'none';
-    document.getElementById('om-button').style.display = 'none';
-}
-
-
-
-
-
-
-
-
