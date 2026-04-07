@@ -1,11 +1,55 @@
-// 1. Ta liste de produits (ajoute autant que tu veux ici)
+// 1. Ta liste de 50 produits avec des prix réalistes
 const catalogueDouxDoux = [
-    { id: 1, titre: "iPhone 15 Pro Max", prix: "850.000", cat: "High-Tech", img: "https://via.placeholder.com/280" },
-    { id: 2, titre: "Samsung S24 Ultra", prix: "750.000", cat: "High-Tech", img: "https://via.placeholder.com/280" },
-    { id: 3, titre: "AirPods Pro 2", prix: "150.000", cat: "Accessoires", img: "https://via.placeholder.com/280" },
-    { id: 4, titre: "MacBook Air M3", prix: "950.000", cat: "Informatique", img: "https://via.placeholder.com/280" },
-    { id: 5, titre: "Apple Watch S9", prix: "250.000", cat: "Gadget", img: "https://via.placeholder.com/280" },
-    { id: 6, titre: "PlayStation 5", prix: "450.000", cat: "Gaming", img: "https://via.placeholder.com/280" }
+    { id: 1, titre: "Écouteurs Bluetooth", prix: "15.000", cat: "High-Tech", img: "https://via.placeholder.com/280" },
+    { id: 2, titre: "Montre Quartz", prix: "10.000", cat: "Mode", img: "https://via.placeholder.com/280" },
+    { id: 3, titre: "Chargeur Rapide Type-C", prix: "5.000", cat: "Accessoires", img: "https://via.placeholder.com/280" },
+    { id: 4, titre: "Clé USB 64Go", prix: "4.500", cat: "Informatique", img: "https://via.placeholder.com/280" },
+    { id: 5, titre: "Powerbank 10000mAh", prix: "12.500", cat: "High-Tech", img: "https://via.placeholder.com/280" },
+    { id: 6, titre: "Souris Sans Fil", prix: "3.500", cat: "Informatique", img: "https://via.placeholder.com/280" },
+    { id: 7, titre: "T-shirt Coton", prix: "4.000", cat: "Mode", img: "https://via.placeholder.com/280" },
+    { id: 8, titre: "Casquette Sport", prix: "2.500", cat: "Mode", img: "https://via.placeholder.com/280" },
+    { id: 9, titre: "Coque iPhone", prix: "3.000", cat: "Accessoires", img: "https://via.placeholder.com/280" },
+    { id: 10, titre: "Sac à dos USB", prix: "15.000", cat: "Mode", img: "https://via.placeholder.com/280" },
+    { id: 11, titre: "Ring Light Selfie", prix: "8.500", cat: "Photo", img: "https://via.placeholder.com/280" },
+    { id: 12, titre: "Support Téléphone Auto", prix: "2.000", cat: "Accessoires", img: "https://via.placeholder.com/280" },
+    { id: 13, titre: "Écran de protection", prix: "1.000", cat: "Accessoires", img: "https://via.placeholder.com/280" },
+    { id: 14, titre: "Enceinte Mini", prix: "7.000", cat: "Audio", img: "https://via.placeholder.com/280" },
+    { id: 15, titre: "Câble HDMI 2m", prix: "3.500", cat: "Informatique", img: "https://via.placeholder.com/280" },
+    { id: 16, titre: "Clavier Bureautique", prix: "6.500", cat: "Informatique", img: "https://via.placeholder.com/280" },
+    { id: 17, titre: "Ventilateur USB", prix: "4.500", cat: "Gadget", img: "https://via.placeholder.com/280" },
+    { id: 18, titre: "Lunettes de soleil", prix: "5.000", cat: "Mode", img: "https://via.placeholder.com/280" },
+    { id: 19, titre: "Trépied Flexible", prix: "4.000", cat: "Photo", img: "https://via.placeholder.com/280" },
+    { id: 20, titre: "Ampoule LED Connectée", prix: "9.000", cat: "Maison", img: "https://via.placeholder.com/280" },
+    { id: 21, titre: "Parfum Homme 50ml", prix: "12.000", cat: "Beauté", img: "https://via.placeholder.com/280" },
+    { id: 22, titre: "Crème Hydratante", prix: "3.500", cat: "Beauté", img: "https://via.placeholder.com/280" },
+    { id: 23, titre: "Baskets Urbaines", prix: "18.500", cat: "Mode", img: "https://via.placeholder.com/280" },
+    { id: 24, titre: "Adaptateur Secteur", prix: "2.500", cat: "Accessoires", img: "https://via.placeholder.com/280" },
+    { id: 25, titre: "Gourde Isotherme", prix: "6.000", cat: "Maison", img: "https://via.placeholder.com/280" },
+    { id: 26, titre: "Tapis de souris XXL", prix: "5.500", cat: "Informatique", img: "https://via.placeholder.com/280" },
+    { id: 27, titre: "Micro Cravate", prix: "4.500", cat: "Audio", img: "https://via.placeholder.com/280" },
+    { id: 28, titre: "Manette PC/Android", prix: "11.000", cat: "Gaming", img: "https://via.placeholder.com/280" },
+    { id: 29, titre: "Webcam HD", prix: "14.500", cat: "Informatique", img: "https://via.placeholder.com/280" },
+    { id: 30, titre: "Répéteur WiFi", prix: "13.000", cat: "High-Tech", img: "https://via.placeholder.com/280" },
+    { id: 31, titre: "Livre de poche", prix: "3.000", cat: "Culture", img: "https://via.placeholder.com/280" },
+    { id: 32, titre: "Porte-monnaie Cuir", prix: "7.500", cat: "Mode", img: "https://via.placeholder.com/280" },
+    { id: 33, titre: "Ceinture Homme", prix: "4.500", cat: "Mode", img: "https://via.placeholder.com/280" },
+    { id: 34, titre: "Kit Pinceaux Maquillage", prix: "6.500", cat: "Beauté", img: "https://via.placeholder.com/280" },
+    { id: 35, titre: "Miroir LED", prix: "8.000", cat: "Beauté", img: "https://via.placeholder.com/280" },
+    { id: 36, titre: "Support PC Ventilé", prix: "10.500", cat: "Informatique", img: "https://via.placeholder.com/280" },
+    { id: 37, titre: "Sacoche Ordinateur", prix: "12.000", cat: "Informatique", img: "https://via.placeholder.com/280" },
+    { id: 38, titre: "Balance de cuisine", prix: "5.500", cat: "Maison", img: "https://via.placeholder.com/280" },
+    { id: 39, titre: "Machine à café Mini", prix: "25.000", cat: "Maison", img: "https://via.placeholder.com/280" },
+    { id: 40, titre: "Rasoir Électrique", prix: "14.000", cat: "Beauté", img: "https://via.placeholder.com/280" },
+    { id: 41, titre: "Veilleuse Enfant", prix: "4.000", cat: "Maison", img: "https://via.placeholder.com/280" },
+    { id: 42, titre: "Hub USB 4 Ports", prix: "3.500", cat: "Informatique", img: "https://via.placeholder.com/280" },
+    { id: 43, titre: "Carte Mémoire 32Go", prix: "3.000", cat: "High-Tech", img: "https://via.placeholder.com/280" },
+    { id: 44, titre: "Bracelet Sport", prix: "2.000", cat: "Mode", img: "https://via.placeholder.com/280" },
+    { id: 45, titre: "Organisateur de câbles", prix: "1.500", cat: "Accessoires", img: "https://via.placeholder.com/280" },
+    { id: 46, titre: "Cutter de précision", prix: "1.200", cat: "Gadget", img: "https://via.placeholder.com/280" },
+    { id: 47, titre: "Colle forte Tube", prix: "1.000", cat: "Gadget", img: "https://via.placeholder.com/280" },
+    { id: 48, titre: "Piles Rechargeables x4", prix: "5.000", cat: "High-Tech", img: "https://via.placeholder.com/280" },
+    { id: 49, titre: "Radio Portable", prix: "8.500", cat: "Audio", img: "https://via.placeholder.com/280" },
+    { id: 50, titre: "Thermomètre Digital", prix: "2.500", cat: "Santé", img: "https://via.placeholder.com/280" }
 ];
 
 // 2. Sélection de la grille
@@ -14,20 +58,20 @@ const grille = document.getElementById('product-grid');
 // 3. Fonction pour générer les cages
 function chargerProduits() {
     if(!grille) return;
-    grille.innerHTML = ""; // On vide
+    grille.innerHTML = ""; 
 
     catalogueDouxDoux.forEach(p => {
         grille.innerHTML += `
             <div class="product-card">
                 <div class="product-image">
-                    <img src="${p.img}" alt="${p.titre}" style="width:100%;">
+                    <img src="${p.img}" alt="${p.titre}" style="width:100%; height:100%; object-fit:cover;">
                 </div>
                 <div class="product-info">
                     <span class="category-tag">${p.cat}</span>
                     <h3 class="product-title">${p.titre}</h3>
                     <p class="product-price">${p.prix} FCFA</p>
-                    <button class="btn-pay btn-wave" onclick="alert('Lien Wave envoyé')">Payer avec Wave</button>
-                    <button class="btn-pay btn-om" onclick="alert('Lien OM envoyé')">Payer avec Orange Money</button>
+                    <button class="btn-pay btn-wave" onclick="alert('Redirection Wave pour ${p.titre}')">Payer avec Wave</button>
+                    <button class="btn-pay btn-om" onclick="alert('Redirection Orange Money pour ${p.titre}')">Payer avec Orange Money</button>
                 </div>
             </div>
         `;
@@ -37,8 +81,11 @@ function chargerProduits() {
 // 4. Gestion du bouton remonter
 window.onscroll = function() {
     let btn = document.getElementById("btn-scroll-top");
-    if (document.documentElement.scrollTop > 100) { btn.style.display = "block"; } 
-    else { btn.style.display = "none"; }
+    if (document.documentElement.scrollTop > 100) { 
+        btn.style.display = "block"; 
+    } else { 
+        btn.style.display = "none"; 
+    }
 };
 
 document.getElementById("btn-scroll-top").onclick = function() {
@@ -47,3 +94,23 @@ document.getElementById("btn-scroll-top").onclick = function() {
 
 // 5. Lancer le chargement
 window.onload = chargerProduits;
+
+
+let count = 0;
+const cartDisplay = document.getElementById('cart-count');
+
+// Modifie la fonction ajouter au panier (ou crée la si elle n'existe pas)
+function ajouterAuPanier(nomProduit) {
+    count++;
+    cartDisplay.innerText = count;
+    
+    // Petite animation visuelle
+    cartDisplay.style.transform = "scale(1.5)";
+    setTimeout(() => {
+        cartDisplay.style.transform = "scale(1)";
+    }, 200);
+
+    console.log(nomProduit + " ajouté au panier");
+}
+   
+   
