@@ -94,23 +94,3 @@ document.getElementById("btn-scroll-top").onclick = function() {
 
 // 5. Lancer le chargement
 window.onload = chargerProduits;
-
-
-let count = 0;
-const cartDisplay = document.getElementById('cart-count');
-
-// Modifie la fonction ajouter au panier (ou crée la si elle n'existe pas)
-function ajouterAuPanier(nomProduit) {
-    count++;
-    cartDisplay.innerText = count;
-    
-    // Petite animation visuelle
-    cartDisplay.style.transform = "scale(1.5)";
-    setTimeout(() => {
-        cartDisplay.style.transform = "scale(1)";
-    }, 200);
-
-    console.log(nomProduit + " ajouté au panier");
-}
-   
-   
