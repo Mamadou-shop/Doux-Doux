@@ -7,7 +7,7 @@ const catalogueDouxDoux = [
     { id: 5, titre: "Powerbank 10000mAh", prix: "12.500", cat: "High-Tech", img: "https://i.pinimg.com/736x/48/bb/af/48bbaf4548f7c0d45026b3741bcf3132.jpg" },
     { id: 6, titre: "Souris Sans Fil", prix: "3.500", cat: "Informatique", img: "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=500&q=80" },
     { id: 7, titre: "T-shirt Coton", prix: "4.000", cat: "Mode", img: "https://i.pinimg.com/736x/27/4c/78/274c78deb9aaec0dbea20f60d6e8133a.jpg" },
-    { id: 8, titre: "Casquette Sport", prix: "2.500", cat: "Mode", img: "https://via.placeholder.com/280" },
+    { id: 8, titre: "Casquette Sport", prix: "2.500", cat: "Mode", img: "https://i.pinimg.com/1200x/56/12/13/561213f5496998771c7e831b70ecf3d8.jpg" },
     { id: 9, titre: "Coque iPhone", prix: "3.000", cat: "Accessoires", img: "https://images.unsplash.com/photo-1603313011101-316506a7d847?w=500" },
     { id: 10, titre: "Sac à dos USB", prix: "15.000", cat: "Mode", img: "https://via.placeholder.com/280" },
     { id: 11, titre: "Ring Light Selfie", prix: "8.500", cat: "Photo", img: "https://images.unsplash.com/photo-1596468138838-9e56f59e3821?w=500" },
