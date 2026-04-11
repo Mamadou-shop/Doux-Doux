@@ -1,6 +1,6 @@
 // 1. Ta liste de 50 produits avec des prix réalistes
 const catalogueDouxDoux = [
-    { id: 1, titre: "Écouteurs Bluetooth", prix: "15.000", cat: "High-Tech", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNr38fJQdDTUvxyWWKmfhn89bofDzwYnWmy_sDoqK_ZQ&s" },
+    { id: 1, titre: "Écouteurs Bluetooth", prix: "15.000", cat: "High-Tech", img: "https://i.pinimg.com/1200x/f1/43/da/f143da04925eed47c677e31d5c2149d4.jpg" },
     { id: 2, titre: "Montre Quartz", prix: "10.000", cat: "Mode", img: "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=600" },
     { id: 3, titre: "Chargeur Rapide Type-C", prix: "5.000", cat: "Accessoires", img: "https://images.unsplash.com/photo-1619130704702-86161947b7b1?w=500" },
     { id: 4, titre: "Clé USB 64Go", prix: "4.500", cat: "Informatique", img: "https://images.unsplash.com/photo-1618410314050-7053356079c5?w=500" },
