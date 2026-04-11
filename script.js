@@ -8,7 +8,7 @@ const catalogueDouxDoux = [
     { id: 6, titre: "Souris Sans Fil", prix: "3.500", cat: "Informatique", img: "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=500&q=80" },
     { id: 7, titre: "T-shirt Coton", prix: "4.000", cat: "Mode", img: "https://i.pinimg.com/736x/27/4c/78/274c78deb9aaec0dbea20f60d6e8133a.jpg" },
     { id: 8, titre: "Casquette Sport", prix: "2.500", cat: "Mode", img: "https://i.pinimg.com/1200x/18/e6/80/18e68041cd04caa5a17268a56cfac252.jpg" },
-    { id: 9, titre: "Coque iPhone", prix: "3.000", cat: "Accessoires", img: "https://images.unsplash.com/photo-1603313011101-316506a7d847?w=500" },
+    { id: 9, titre: "Coque iPhone", prix: "3.000", cat: "Accessoires", img: "https://i.pinimg.com/1200x/27/90/e4/2790e4a0d84d5a72ba8a66ff7a986f99.jpg" },
     { id: 10, titre: "Sac à dos USB", prix: "15.000", cat: "Mode", img: "https://via.placeholder.com/280" },
     { id: 11, titre: "Ring Light Selfie", prix: "8.500", cat: "Photo", img: "https://images.unsplash.com/photo-1596468138838-9e56f59e3821?w=500" },
     { id: 12, titre: "Support Téléphone Auto", prix: "2.000", cat: "Accessoires", img: "https://images.unsplash.com/photo-1586105449897-2242aa01524e?w=500" },
