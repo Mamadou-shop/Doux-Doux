@@ -3,7 +3,7 @@ const catalogueDouxDoux = [
     { id: 1, titre: "Écouteurs Bluetooth", prix: "15.000", cat: "High-Tech", img: "https://i.pinimg.com/1200x/f1/43/da/f143da04925eed47c677e31d5c2149d4.jpg" },
     { id: 2, titre: "Montre Quartz", prix: "10.000", cat: "Mode", img: "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=600" },
     { id: 3, titre: "Chargeur Rapide Type-C", prix: "5.000", cat: "Accessoires", img: "https://i.pinimg.com/1200x/e5/41/24/e54124d86ab0362870d271ffb78e275b.jpg" },
-    { id: 4, titre: "Clé USB 64Go", prix: "4.500", cat: "Informatique", img: "https://images.unsplash.com/photo-1618410314050-7053356079c5?w=500" },
+    { id: 4, titre: "Clé USB 64Go", prix: "4.500", cat: "Informatique", img: "https://i.pinimg.com/736x/79/d6/bd/79d6bd675ec0090fdd54fc65ec9e00db.jpg" },
     { id: 5, titre: "Powerbank 10000mAh", prix: "12.500", cat: "High-Tech", img: "https://images.unsplash.com/photo-1609592424109-dd0371430030?w=500" },
     { id: 6, titre: "Souris Sans Fil", prix: "3.500", cat: "Informatique", img: "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=500&q=80" },
     { id: 7, titre: "T-shirt Coton", prix: "4.000", cat: "Mode", img: "https://via.placeholder.com/280" },
