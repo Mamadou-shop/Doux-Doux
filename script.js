@@ -9,7 +9,7 @@ const catalogueDouxDoux = [
     { id: 7, titre: "T-shirt Coton", prix: "4.000", cat: "Mode", img: "https://i.pinimg.com/736x/27/4c/78/274c78deb9aaec0dbea20f60d6e8133a.jpg" },
     { id: 8, titre: "Casquette Sport", prix: "2.500", cat: "Mode", img: "https://i.pinimg.com/1200x/18/e6/80/18e68041cd04caa5a17268a56cfac252.jpg" },
     { id: 9, titre: "Coque iPhone", prix: "3.000", cat: "Accessoires", img: "https://i.pinimg.com/1200x/27/90/e4/2790e4a0d84d5a72ba8a66ff7a986f99.jpg" },
-    { id: 10, titre: "Sac à dos USB", prix: "15.000", cat: "Mode", img: "https://via.placeholder.com/280" },
+    { id: 10, titre: "Sac à dos USB", prix: "15.000", cat: "Mode", img: "https://i.pinimg.com/736x/3a/75/99/3a75991b24dd345c1a13a897a9600d14.jpg" },
     { id: 11, titre: "Ring Light Selfie", prix: "8.500", cat: "Photo", img: "https://images.unsplash.com/photo-1596468138838-9e56f59e3821?w=500" },
     { id: 12, titre: "Support Téléphone Auto", prix: "2.000", cat: "Accessoires", img: "https://images.unsplash.com/photo-1586105449897-2242aa01524e?w=500" },
     { id: 13, titre: "Écran de protection", prix: "1.000", cat: "Accessoires", img: "https://images.unsplash.com/photo-1611186871348-b1ec696e520b?w=500" },
