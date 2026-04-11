@@ -10,7 +10,7 @@ const catalogueDouxDoux = [
     { id: 8, titre: "Casquette Sport", prix: "2.500", cat: "Mode", img: "https://i.pinimg.com/1200x/18/e6/80/18e68041cd04caa5a17268a56cfac252.jpg" },
     { id: 9, titre: "Coque iPhone", prix: "3.000", cat: "Accessoires", img: "https://i.pinimg.com/1200x/27/90/e4/2790e4a0d84d5a72ba8a66ff7a986f99.jpg" },
     { id: 10, titre: "Sac à dos USB", prix: "15.000", cat: "Mode", img: "https://i.pinimg.com/736x/36/18/69/36186951c2ef99813ddf669516540d1a.jpg" },
-    { id: 11, titre: "Ring Light Selfie", prix: "8.500", cat: "Photo", img: "https://images.unsplash.com/photo-1596468138838-9e56f59e3821?w=500" },
+    { id: 11, titre: "Ring Light Selfie", prix: "8.500", cat: "Photo", img: "https://i.pinimg.com/736x/ac/71/3a/ac713afa1cadb288340af4542a0e1213.jpg" },
     { id: 12, titre: "Support Téléphone Auto", prix: "2.000", cat: "Accessoires", img: "https://images.unsplash.com/photo-1586105449897-2242aa01524e?w=500" },
     { id: 13, titre: "Écran de protection", prix: "1.000", cat: "Accessoires", img: "https://images.unsplash.com/photo-1611186871348-b1ec696e520b?w=500" },
     { id: 14, titre: "Enceinte Mini", prix: "7.000", cat: "Audio", img: "https://images.unsplash.com/photo-1608156639585-b3a032ef9689?w=500" },
