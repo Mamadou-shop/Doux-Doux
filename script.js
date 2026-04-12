@@ -45,11 +45,11 @@ const catalogueDouxDoux = [
     { id: 43, titre: "Carte Mémoire 32Go", prix: "3.000", cat: "High-Tech", img: "https://i.pinimg.com/1200x/e6/f6/03/e6f603dc0eaeae17b3995ae0b3630d7e.jpg" },
     { id: 44, titre: "Bracelet Sport", prix: "2.000", cat: "Mode", img: "https://i.pinimg.com/736x/1c/42/41/1c42417c12dd8be429cc0f102d3b6a48.jpg" },
     { id: 45, titre: "Organisateur de câbles", prix: "1.500", cat: "Accessoires", img: "https://i.pinimg.com/1200x/a5/15/e4/a515e492067a515034bf8c91388b3a6d.jpg" },
-    { id: 46, titre: "Cutter de précision", prix: "1.200", cat: "Gadget", img: "https://via.placeholder.com/280" },
-    { id: 47, titre: "Colle forte Tube", prix: "1.000", cat: "Gadget", img: "https://via.placeholder.com/280" },
-    { id: 48, titre: "Piles Rechargeables x4", prix: "5.000", cat: "High-Tech", img: "https://via.placeholder.com/280" },
-    { id: 49, titre: "Radio Portable", prix: "8.500", cat: "Audio", img: "https://via.placeholder.com/280" },
-    { id: 50, titre: "Thermomètre Digital", prix: "2.500", cat: "Santé", img: "https://via.placeholder.com/280" }
+    { id: 46, titre: "Cutter de précision", prix: "1.200", cat: "Gadget", img: "https://i.pinimg.com/1200x/74/7b/52/747b52214fb4d6ca2213a7d0a9d39c94.jpg" },
+    { id: 47, titre: "Colle forte Tube", prix: "1.000", cat: "Gadget", img: "https://i.pinimg.com/1200x/3b/30/93/3b3093b520f36a5a6337a46032b3658a.jpg" },
+    { id: 48, titre: "Piles Rechargeables x4", prix: "5.000", cat: "High-Tech", img: "https://i.pinimg.com/1200x/89/60/92/896092e2b9353a4b398543d6bc938f81.jpg" },
+    { id: 49, titre: "Radio Portable", prix: "8.500", cat: "Audio", img: "https://i.pinimg.com/736x/f9/32/cb/f932cbcd7fa328efbe07d1fb500cd064.jpg" },
+    { id: 50, titre: "Thermomètre Digital", prix: "2.500", cat: "Santé", img: "https://i.pinimg.com/1200x/3f/5b/ce/3f5bce6a09f7ac7cd71e5f6c26780131.jpg" }
 ];
 
 // 2. Sélection de la grille
