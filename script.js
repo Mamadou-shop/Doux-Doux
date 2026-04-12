@@ -63,7 +63,7 @@ function chargerProduits() {
         grille.innerHTML += `
             <div class="product-card">
                 <div class="product-image">
-                    <img src="${p.img}" alt="${p.titre}" style="width:100%; height:200px; object-fit:cover;">
+                    <img src="${p.img}" alt="${p.titre}" style="width:100%; height:300px; object-fit:cover;">
                 </div>
                 <div class="product-info">
                     <span class="category-tag">${p.cat}</span>
