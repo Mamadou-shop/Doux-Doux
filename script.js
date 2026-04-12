@@ -23,7 +23,7 @@ const catalogueDouxDoux = [
     { id: 21, titre: "Parfum Homme 50ml", prix: "12.000", cat: "Beauté", img: "https://i.pinimg.com/736x/ac/6e/7c/ac6e7c34bb818963af1d1bce9752a19f.jpg" },
     { id: 22, titre: "Crème Hydratante", prix: "3.500", cat: "Beauté", img: "https://i.pinimg.com/736x/8e/bc/55/8ebc5596743eb7221c2d1878c3d4492b.jpg" },
     { id: 23, titre: "Baskets Urbaines", prix: "18.500", cat: "Mode", img: "https://i.pinimg.com/736x/f1/eb/a2/f1eba2da56e538a8b38ed46193bb7648.jpg" },
-    { id: 24, titre: "Adaptateur Secteur", prix: "2.500", cat: "Accessoires", img: "https://via.placeholder.com/280" },
+    { id: 24, titre: "Adaptateur Secteur", prix: "2.500", cat: "Accessoires", img: "https://i.pinimg.com/1200x/16/fa/be/16fabe45085600244c7f5bf32675ea04.jpg" },
     { id: 25, titre: "Gourde Isotherme", prix: "6.000", cat: "Maison", img: "https://via.placeholder.com/280" },
     { id: 26, titre: "Tapis de souris XXL", prix: "5.500", cat: "Informatique", img: "https://via.placeholder.com/280" },
     { id: 27, titre: "Micro Cravate", prix: "4.500", cat: "Audio", img: "https://via.placeholder.com/280" },
