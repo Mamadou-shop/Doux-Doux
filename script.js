@@ -123,7 +123,6 @@ window.onscroll = function() {
 document.getElementById("btn-scroll-top").onclick = function() {
     window.scrollTo({top: 0, behavior: 'smooth'});
 };
-
 function chargerProduits() {
     const grille = document.getElementById("product-grid");
     if(!grille) return;
@@ -145,5 +144,8 @@ function chargerProduits() {
             </div>`;
     });
 }
+
+
+
     }
 }
