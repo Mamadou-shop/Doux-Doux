@@ -1,6 +1,6 @@
-# 🛍️ BAANA-BAANA SHOP - Boutique Multi-Catégories
+#Doux-Doux - Boutique Multi-Catégories
 
-Bienvenue sur le dépôt de **BAANA-BAANA SHOP**, une application web moderne conçue pour une expérience de shopping fluide et rapide.
+Bienvenue sur le dépôt de **Doux-Doux**, une application web moderne conçue pour une expérience de shopping fluide et rapide.
 
 ## 📦 Nos Rayons
 - **High-Tech** : Derniers modèles d'iPhones et smartphones.
