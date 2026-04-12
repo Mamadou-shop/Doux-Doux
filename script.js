@@ -95,11 +95,8 @@ document.getElementById("btn-scroll-top").onclick = function() {
 // 5. Lancer le chargement
 window.onload = chargerProduits;
 function versPaiement(methode, nomProduit, prix) {
-    if (methode === 'Wave') {
-        // Lien vers ton interface Wave (ou page de succès pour le test)
-        window.location.href = "https://pay.wave.com/ton-lien-ici"; 
-    } else if (methode === 'Orange Money') {
-        // Lien vers ton interface Orange Money
-        window.location.href = "https://orange-money-paiement.sn/ton-lien";
+    // On redirige vers la page de paiement que nous venons de créer
+    window.location.href = "paiement.html";
+}
     }
 }
