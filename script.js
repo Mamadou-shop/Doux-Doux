@@ -124,11 +124,26 @@ document.getElementById("btn-scroll-top").onclick = function() {
     window.scrollTo({top: 0, behavior: 'smooth'});
 };
 
-// 5. Lancer le chargement
-window.onload = chargerProduits;
-function versPaiement(methode, nomProduit, prix) {
-    // On redirige vers la page de paiement que nous venons de créer
-    window.location.href = "paiement.html";
+function chargerProduits() {
+    const grille = document.getElementById("product-grid");
+    if(!grille) return;
+    grille.innerHTML = "";
+
+    catalogueDouxDoux.forEach(p => {
+        grille.innerHTML += `
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="${p.img}" alt="${p.titre}" style="width:100%; height:100%; object-fit:cover;">
+                </div>
+                <div class="product-info">
+                    <span class="category-tag">${p.cat}</span>
+                    <h3 class="product-title">${p.titre}</h3>
+                    <p class="product-price">${p.prix} FCFA</p>
+                    <button class="btn-pay btn-wave" onclick="alert('Redirection Wave pour ${p.titre}')">Payer avec Wave</button>
+                    <button class="btn-pay btn-om" onclick="alert('Redirection Orange Money pour ${p.titre}')">Payer avec Orange Money</button>
+                </div>
+            </div>`;
+    });
 }
     }
 }
