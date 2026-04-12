@@ -14,7 +14,7 @@ const catalogueDouxDoux = [
     { id: 12, titre: "Support Téléphone Auto", prix: "2.000", cat: "Accessoires", img: "https://i.pinimg.com/1200x/01/c9/ad/01c9ad11758dc615de1b3bc90e15832e.jpg" },
     { id: 13, titre: "Écran de protection", prix: "1.000", cat: "Accessoires", img: "https://i.pinimg.com/1200x/ff/8c/47/ff8c4742aa796f4b51d25de67d579364.jpg" },
     { id: 14, titre: "Enceinte Mini", prix: "7.000", cat: "Audio", img: "https://www.rekfi.com/storage/2024/07/Enceinte-Portable-Bluetooth-Tronsmart-T7-mini-GRIS.jpg" },
-    { id: 15, titre: "Câble HDMI 2m", prix: "3.500", cat: "Informatique", img: "https://images.unsplash.com/photo-1629739603091-665a3628e945?w=500" },
+    { id: 15, titre: "Câble HDMI 2m", prix: "3.500", cat: "Informatique", img: "https://i.pinimg.com/1200x/f9/fa/e4/f9fae45e903d9fe2c73be22fb91ccc5b.jpg" },
     { id: 16, titre: "Clavier Bureautique", prix: "6.500", cat: "Informatique", img: "https://images.unsplash.com/photo-1587829741301-dc798b83aca2?w=500" },
     { id: 17, titre: "Ventilateur USB", prix: "4.500", cat: "Gadget", img: "https://images.unsplash.com/photo-1591123120675-6f7f1aae0e5b?w=500" },
     { id: 18, titre: "Lunettes de soleil", prix: "5.000", cat: "Mode", img: "" },
