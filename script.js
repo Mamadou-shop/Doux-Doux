@@ -19,7 +19,7 @@ const catalogueDouxDoux = [
     { id: 17, titre: "Ventilateur USB", prix: "4.500", cat: "Gadget", img: "https://i.pinimg.com/736x/69/80/07/698007602bc12b99d2fdb06687f05dd4.jpg" },
     { id: 18, titre: "Lunettes de soleil", prix: "5.000", cat: "Mode", img: "https://i.pinimg.com/1200x/09/f6/89/09f689dac200296080a6f7831af3def4.jpg" },
     { id: 19, titre: "Trépied Flexible", prix: "4.000", cat: "Photo", img: "https://i.pinimg.com/1200x/cd/01/47/cd01476131736bc70ddd2059c9290565.jpg" },
-    { id: 20, titre: "Ampoule LED Connectée", prix: "9.000", cat: "Maison", img: "https://via.placeholder.com/280" },
+    { id: 20, titre: "Ampoule LED Connectée", prix: "9.000", cat: "Maison", img: "https://i.pinimg.com/736x/6f/f3/6b/6ff36b1029308d3590d52060f21c188f.jpg" },
     { id: 21, titre: "Parfum Homme 50ml", prix: "12.000", cat: "Beauté", img: "https://via.placeholder.com/280" },
     { id: 22, titre: "Crème Hydratante", prix: "3.500", cat: "Beauté", img: "https://via.placeholder.com/280" },
     { id: 23, titre: "Baskets Urbaines", prix: "18.500", cat: "Mode", img: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500" },
