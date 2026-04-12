@@ -149,7 +149,22 @@ body {
 .modal-content button:active {
     transform: scale(0.95);
 }  
-   
+   /* Adaptation pour téléphone portable */
+@media (max-width: 600px) {
+    #product-grid {
+        grid-template-columns: repeat(2, 1fr); /* Affiche 2 produits par ligne au lieu de 4 */
+        gap: 10px; /* Réduit l'espace entre les cages */
+        padding: 10px;
+    }
+
+    .product-card img {
+        height: 180px; /* Réduit un peu la hauteur des images pour gagner de la place */
+    }
+
+    .product-title {
+        font-size: 14px; /* Texte un peu plus petit pour mobile */
+    }
+}
 
 
    
