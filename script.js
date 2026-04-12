@@ -132,40 +132,8 @@ const catalogueDouxDoux = [
     { id: 50, titre: "Thermomètre Digital", prix: "2.500", cat: "Santé", img: "https://i.pinimg.com/1200x/3f/5b/ce/3f5bce..." }
 ];
 
-// 2. Fonction pour afficher les 50 produits d'un coup
-function chargerProduits() {
-    const grille = document.getElementById("product-grid");
-    if(!grille) return;
-    
-    grille.innerHTML = ""; // On vide la grille avant de remplir
 
-    catalogueDouxDoux.forEach(p => {
-        grille.innerHTML += `
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="${p.img}" alt="${p.titre}" style="width:100%; height:200px; object-fit:cover;">
-                </div>
-                <div class="product-info">
-                    <span class="category-tag">${p.cat}</span>
-                    <h3 class="product-title">${p.titre}</h3>
-                    <p class="product-price">${p.prix} FCFA</p>
-                    <div class="payment-buttons">
-                        <button class="btn-pay btn-wave" onclick="window.location.href='paiement.html'">Payer avec Wave</button>
-                        <button class="btn-pay btn-om" onclick="window.location.href='paiement.html'">Payer avec Orange Money</button>
-                    </div>
-                </div>
-            </div>`;
-    });
-}
-
-// 3. Lancer l'affichage et gérer le bouton remonter
-window.onload = chargerProduits;
-
-window.onscroll = function() {
-    let btn = document.getElementById("btn-scroll-top");
-    if (btn) {
-        btn.style.display = (document.documentElement.scrollTop > 100) ? "block" : "none";
-    }
+   
 };
 
 
