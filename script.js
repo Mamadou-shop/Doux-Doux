@@ -41,7 +41,7 @@ const catalogueDouxDoux = [
     { id: 39, titre: "Machine à café Mini", prix: "25.000", cat: "Maison", img: "https://i.pinimg.com/1200x/49/f8/73/49f8734f57df45b0394cbb396cc4b475.jpg" },
     { id: 40, titre: "Rasoir Électrique", prix: "14.000", cat: "Beauté", img: "https://i.pinimg.com/736x/aa/e1/3c/aae13c5ca3cf5654b96900d9ab518397.jpg" },
     { id: 41, titre: "Veilleuse Enfant", prix: "4.000", cat: "Maison", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvGeeAa2gZ2P5UT8rqRHxuQJTy1Bj3_fqzoA&s" },
-    { id: 42, titre: "Hub USB 4 Ports", prix: "3.500", cat: "https://i.pinimg.com/1200x/94/52/68/9452689f07b39335e99c7f236b600ee9.jpg" },
+    { id: 42, titre: "Hub USB 4 Ports", prix: "3.500", cat:"High-Tech",img: "https://i.pinimg.com/1200x/94/52/68/9452689f07b39335e99c7f236b600ee9.jpg" },
     { id: 43, titre: "Carte Mémoire 32Go", prix: "3.000", cat: "High-Tech", img: "https://i.pinimg.com/1200x/e6/f6/03/e6f603dc0eaeae17b3995ae0b3630d7e.jpg" },
     { id: 44, titre: "Bracelet Sport", prix: "2.000", cat: "Mode", img: "https://i.pinimg.com/736x/1c/42/41/1c42417c12dd8be429cc0f102d3b6a48.jpg" },
     { id: 45, titre: "Organisateur de câbles", prix: "1.500", cat: "Accessoires", img: "https://i.pinimg.com/1200x/a5/15/e4/a515e492067a515034bf8c91388b3a6d.jpg" },
