@@ -11,7 +11,7 @@ const catalogueDouxDoux = [
     { id: 9, titre: "Coque iPhone", prix: "3.000", cat: "Accessoires", img: "https://i.pinimg.com/1200x/27/90/e4/2790e4a0d84d5a72ba8a66ff7a986f99.jpg" },
     { id: 10, titre: "Sac à dos USB", prix: "15.000", cat: "Mode", img: "https://i.pinimg.com/736x/36/18/69/36186951c2ef99813ddf669516540d1a.jpg" },
     { id: 11, titre: "Ring Light Selfie", prix: "8.500", cat: "Photo", img: "https://i.pinimg.com/736x/ac/71/3a/ac713afa1cadb288340af4542a0e1213.jpg" },
-    { id: 12, titre: "Support Téléphone Auto", prix: "2.000", cat: "Accessoires", img: "https://i.pinimg.com/1200x/62/27/fd/6227fd0d2a38873cdee7112e7b053780.jpg" },
+    { id: 12, titre: "Support Téléphone Auto", prix: "2.000", cat: "Accessoires", img: "https://i.pinimg.com/1200x/01/c9/ad/01c9ad11758dc615de1b3bc90e15832e.jpg" },
     { id: 13, titre: "Écran de protection", prix: "1.000", cat: "Accessoires", img: "https://images.unsplash.com/photo-1611186871348-b1ec696e520b?w=500" },
     { id: 14, titre: "Enceinte Mini", prix: "7.000", cat: "Audio", img: "https://images.unsplash.com/photo-1608156639585-b3a032ef9689?w=500" },
     { id: 15, titre: "Câble HDMI 2m", prix: "3.500", cat: "Informatique", img: "https://images.unsplash.com/photo-1629739603091-665a3628e945?w=500" },
