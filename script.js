@@ -52,90 +52,48 @@ const catalogueDouxDoux = [
     { id: 50, titre: "Thermomètre Digital", prix: "2.500", cat: "Santé", img: "https://i.pinimg.com/1200x/3f/5b/ce/3f5bce6a09f7ac7cd71e5f6c26780131.jpg" }
 ];
 
-// 2. Sélection de la grille
-const grille = document.getElementById('product-grid');
-
-// 3. Fonction pour générer les cages
+// 2. Fonction pour afficher les produits dans la grille
 function chargerProduits() {
-    if(!grille) return;
-    grille.innerHTML = ""; 
+    const grille = document.getElementById("product-grid");
+    if (!grille) return;
+    
+    grille.innerHTML = ""; // On vide pour éviter les doublons
 
     catalogueDouxDoux.forEach(p => {
         grille.innerHTML += `
             <div class="product-card">
                 <div class="product-image">
-                    <img src="${p.img}" alt="${p.titre}" style="width:100%; height:100%; object-fit:cover;">
+                    <img src="${p.img}" alt="${p.titre}" style="width:100%; height:200px; object-fit:cover;">
                 </div>
                 <div class="product-info">
                     <span class="category-tag">${p.cat}</span>
                     <h3 class="product-title">${p.titre}</h3>
                     <p class="product-price">${p.prix} FCFA</p>
-                    // Sélection des éléments
-const modal = document.getElementById("payment-modal");
-const orderDetails = document.getElementById("order-details");
-const closeModal = document.querySelector(".close");
-
-// 1. Fonction pour ouvrir la modale avec les infos du produit
-function versPaiement(methode, nomProduit, prix) {
-    // On affiche la modale
-    modal.style.display = "block";
-    
-    // On écrit les détails dans la modale
-    orderDetails.innerHTML = `Produit : <strong>${nomProduit}</strong><br>Prix : <strong>${prix} FCFA</strong>`;
-}
-
-// 2. Fonction pour fermer la modale en cliquant sur le X
-closeModal.onclick = function() {
-    modal.style.display = "none";
-}
-
-// 3. Fermer la modale si on clique n'importe où à l'extérieur
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
-
-// 4. Fonctions pour les boutons finaux (Redirection vers ta nouvelle page)
-function confirmerPaiement() {
-    window.location.href = "paiement.html";
-}
-
-function payerOrangeMoney() {
-    window.location.href = "paiement.html";
-}
+                    <div class="payment-buttons">
+                        <button class="btn-pay btn-wave" onclick="window.location.href='paiement.html'">Payer avec Wave</button>
+                        <button class="btn-pay btn-om" onclick="window.location.href='paiement.html'">Payer avec Orange Money</button>
+                    </div>
                 </div>
-            </div>
-        `;
+            </div>`;
     });
 }
 
-// 4. Gestion du bouton remonter
+// 3. Lancement automatique au chargement de la page
+window.onload = chargerProduits;
+
+// 4. Gestion du bouton "Remonter en haut"
 window.onscroll = function() {
     let btn = document.getElementById("btn-scroll-top");
-    if (document.documentElement.scrollTop > 100) { 
-        btn.style.display = "block"; 
-    } else { 
-        btn.style.display = "none"; 
+    if (btn) {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            btn.style.display = "block";
+        } else {
+            btn.style.display = "none";
+        }
     }
 };
 
-document.getElementById("btn-scroll-top").onclick = function() {
+// Fonction pour le clic sur le bouton remonter
+function topFunction() {
     window.scrollTo({top: 0, behavior: 'smooth'});
-};
-// 1. Ton catalogue complet (50 produits)
-const catalogueDouxDoux = [
-    { id: 1, titre: "Écouteurs Bluetooth", prix: "15.000", cat: "High-Tech", img: "https://i.pinimg.com/1200x/f1/43/da/f1..." },
-    { id: 2, titre: "Montre Quartz", prix: "10.000", cat: "Mode", img: "https://images.unsplash.com/photo..." },
-    { id: 3, titre: "Chargeur Rapide Type-C", prix: "5.000", cat: "Accessoires", img: "https://i.pinimg.com/1200x/e5/41/2..." },
-    // ... Ajoute bien TOUTES les lignes de 4 à 49 que l'on voit sur tes photos 75af60 à 75b2e3 ...
-    { id: 50, titre: "Thermomètre Digital", prix: "2.500", cat: "Santé", img: "https://i.pinimg.com/1200x/3f/5b/ce/3f5bce..." }
-];
-
-
-   
-};
-
-
-    }
 }
