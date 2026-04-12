@@ -21,7 +21,7 @@ const catalogueDouxDoux = [
     { id: 19, titre: "Trépied Flexible", prix: "4.000", cat: "Photo", img: "https://i.pinimg.com/1200x/cd/01/47/cd01476131736bc70ddd2059c9290565.jpg" },
     { id: 20, titre: "Ampoule LED Connectée", prix: "9.000", cat: "Maison", img: "https://i.pinimg.com/736x/6f/f3/6b/6ff36b1029308d3590d52060f21c188f.jpg" },
     { id: 21, titre: "Parfum Homme 50ml", prix: "12.000", cat: "Beauté", img: "https://i.pinimg.com/736x/ac/6e/7c/ac6e7c34bb818963af1d1bce9752a19f.jpg" },
-    { id: 22, titre: "Crème Hydratante", prix: "3.500", cat: "Beauté", img: "https://via.placeholder.com/280" },
+    { id: 22, titre: "Crème Hydratante", prix: "3.500", cat: "Beauté", img: "https://i.pinimg.com/736x/04/cf/60/04cf609b128e9920f3ec24630a649d54.jpg" },
     { id: 23, titre: "Baskets Urbaines", prix: "18.500", cat: "Mode", img: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500" },
     { id: 24, titre: "Adaptateur Secteur", prix: "2.500", cat: "Accessoires", img: "https://via.placeholder.com/280" },
     { id: 25, titre: "Gourde Isotherme", prix: "6.000", cat: "Maison", img: "https://via.placeholder.com/280" },
