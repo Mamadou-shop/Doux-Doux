@@ -97,3 +97,43 @@ window.onscroll = function() {
 function topFunction() {
     window.scrollTo({top: 0, behavior: 'smooth'});
 }
+
+// Fonction pour afficher uniquement une catégorie (les variétés)
+function voirVarietes(categorie) {
+    const produitsFiltres = catalogueDouxDoux.filter(p => p.cat === categorie);
+    afficherLaGrille(produitsFiltres);
+    
+    // Ajouter un bouton "Retour" pour revenir à tout le catalogue
+    const grille = document.getElementById("product-grid");
+    grille.insertAdjacentHTML('beforebegin', `<button id="btn-retour" onclick="chargerProduits()">← Retour au catalogue</button>`);
+}
+
+// Fonction principale pour dessiner les produits
+function afficherLaGrille(liste) {
+    const grille = document.getElementById("product-grid");
+    if (!grille) return;
+    grille.innerHTML = "";
+
+    liste.forEach(p => {
+        grille.innerHTML += `
+            <div class="product-card">
+                <div class="product-image" onclick="voirVarietes('${p.cat}')">
+                    <img src="${p.img}" alt="${p.titre}">
+                </div>
+                <div class="product-info">
+                    <h3 style="font-size:14px;">${p.titre}</h3>
+                    <p><strong>${p.prix} FCFA</strong></p>
+                    <button class="btn-pay btn-wave" onclick="window.location.href='paiement.html'">Acheter</button>
+                </div>
+            </div>`;
+    });
+}
+
+// Charger tous les produits au début
+function chargerProduits() {
+    const btnRetour = document.getElementById("btn-retour");
+    if(btnRetour) btnRetour.remove();
+    afficherLaGrille(catalogueDouxDoux);
+}
+
+window.onload = chargerProduits;
