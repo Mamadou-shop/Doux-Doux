@@ -16,7 +16,7 @@ const catalogueDouxDoux = [
     { id: 14, titre: "Enceinte Mini", prix: "7.000", cat: "Audio", img: "https://www.rekfi.com/storage/2024/07/Enceinte-Portable-Bluetooth-Tronsmart-T7-mini-GRIS.jpg" },
     { id: 15, titre: "Câble HDMI 2m", prix: "3.500", cat: "Informatique", img: "https://i.pinimg.com/1200x/f9/fa/e4/f9fae45e903d9fe2c73be22fb91ccc5b.jpg" },
     { id: 16, titre: "Clavier Bureautique", prix: "6.500", cat: "Informatique", img: "https://i.pinimg.com/736x/a2/b2/af/a2b2af4c5cc18b7f134d8b472384626a.jpg" },
-    { id: 17, titre: "Ventilateur USB", prix: "4.500", cat: "Gadget", img: "https://images.unsplash.com/photo-1591123120675-6f7f1aae0e5b?w=500" },
+    { id: 17, titre: "Ventilateur USB", prix: "4.500", cat: "Gadget", img: "https://i.pinimg.com/736x/69/80/07/698007602bc12b99d2fdb06687f05dd4.jpg" },
     { id: 18, titre: "Lunettes de soleil", prix: "5.000", cat: "Mode", img: "" },
     { id: 19, titre: "Trépied Flexible", prix: "4.000", cat: "Photo", img: "" },
     { id: 20, titre: "Ampoule LED Connectée", prix: "9.000", cat: "Maison", img: "https://via.placeholder.com/280" },
