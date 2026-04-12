@@ -26,8 +26,7 @@ const catalogueDouxDoux = [
     { id: 24, titre: "Adaptateur Secteur", prix: "2.500", cat: "Accessoires", img: "https://i.pinimg.com/1200x/16/fa/be/16fabe45085600244c7f5bf32675ea04.jpg" },
     { id: 25, titre: "Gourde Isotherme", prix: "6.000", cat: "Maison", img: "https://i.pinimg.com/1200x/ad/90/6c/ad906c92e7e5fce93b92268928bad22e.jpg" },
     { id: 26, titre: "Tapis de souris XXL", prix: "5.500", cat: "Informatique", img: "https://i.pinimg.com/1200x/95/6e/b3/956eb31db7e85e26175700dce546b700.jpg" },
-    { id: 27, titre: "Micro Cravate", prix: "4.500", cat: "Audio", img: "Micro Cravate
-4.500 FCFA" },
+    { id: 27, titre: "Micro Cravate", prix: "4.500", cat: "Audio", img: "https://i.pinimg.com/736x/dd/3b/8f/dd3b8f25c2aecc3cf17cd52b7cb38a0a.jpg" },
     { id: 28, titre: "Manette PC/Android", prix: "11.000", cat: "Gaming", img: "https://via.placeholder.com/280" },
     { id: 29, titre: "Webcam HD", prix: "14.500", cat: "Informatique", img: "https://via.placeholder.com/280" },
     { id: 30, titre: "Répéteur WiFi", prix: "13.000", cat: "High-Tech", img: "https://via.placeholder.com/280" },
