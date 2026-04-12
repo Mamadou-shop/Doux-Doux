@@ -70,8 +70,8 @@ function chargerProduits() {
                     <span class="category-tag">${p.cat}</span>
                     <h3 class="product-title">${p.titre}</h3>
                     <p class="product-price">${p.prix} FCFA</p>
-                    <button class="btn-pay btn-wave" onclick="alert('Redirection Wave pour ${p.titre}')">Payer avec Wave</button>
-                    <button class="btn-pay btn-om" onclick="alert('Redirection Orange Money pour ${p.titre}')">Payer avec Orange Money</button>
+                    <button class="btn-pay btn-wave" onclick="versPaiement('Wave', '${p.titre}', '${p.prix}')">Payer avec Wave</button>
+                    <button class="btn-pay btn-om" onclick="versPaiement('Orange Money', '${p.titre}', '${p.prix}')">Payer avec Orange Money</button>
                 </div>
             </div>
         `;
@@ -94,3 +94,12 @@ document.getElementById("btn-scroll-top").onclick = function() {
 
 // 5. Lancer le chargement
 window.onload = chargerProduits;
+function versPaiement(methode, nomProduit, prix) {
+    if (methode === 'Wave') {
+        // Lien vers ton interface Wave (ou page de succès pour le test)
+        window.location.href = "https://pay.wave.com/ton-lien-ici"; 
+    } else if (methode === 'Orange Money') {
+        // Lien vers ton interface Orange Money
+        window.location.href = "https://orange-money-paiement.sn/ton-lien";
+    }
+}
