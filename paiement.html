@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paiement - Doux-Doux</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; background-color: #f4f4f4; padding: 20px; }
+        .container { background: white; padding: 20px; border-radius: 15px; max-width: 400px; margin: auto; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        h1 { color: #333; font-size: 20px; }
+        .method { margin: 20px 0; padding: 15px; border-radius: 10px; border: 2px solid #eee; }
+        .wave { border-color: #1cbcf2; }
+        .om { border-color: #ff6600; }
+        img { width: 200px; height: 200px; margin: 10px 0; border: 1px solid #ddd; }
+        .btn { display: inline-block; padding: 10px 20px; border-radius: 5px; text-decoration: none; color: white; font-weight: bold; margin-top: 10px; }
+        .btn-wave { background-color: #1cbcf2; }
+        .btn-om { background-color: #ff6600; }
+        .num { font-weight: bold; font-size: 18px; color: #555; display: block; margin: 5px 0; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Finaliser votre paiement</h1>
+    <p>Scannez le QR Code ou utilisez le numéro ci-dessous</p>
+
+    <div class="method wave">
+        <img src="qr-wave.jpg" alt="QR Code Wave">
+        <span class="num">Numéro Wave : 777226359</span> <a href="tel:777226359" class="btn btn-wave">Appeler pour payer</a>
+    </div>
+
+    <div class="method om">
+        <img src="qr-om.jpg" alt="QR Code Orange Money">
+        <span class="num">Numéro OM : 777226359</span> <a href="tel:777226359" class="btn btn-om">Appeler pour payer</a>
+    </div>
+
+    <a href="index.html" style="color: #888; text-decoration: none; font-size: 14px;">← Retour à la boutique</a>
+</div>
+
+</body>
+</html>
