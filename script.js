@@ -70,8 +70,40 @@ function chargerProduits() {
                     <span class="category-tag">${p.cat}</span>
                     <h3 class="product-title">${p.titre}</h3>
                     <p class="product-price">${p.prix} FCFA</p>
-                    <button class="btn-pay btn-wave" onclick="versPaiement('Wave', '${p.titre}', '${p.prix}')">Payer avec Wave</button>
-                    <button class="btn-pay btn-om" onclick="versPaiement('Orange Money', '${p.titre}', '${p.prix}')">Payer avec Orange Money</button>
+                    // Sélection des éléments
+const modal = document.getElementById("payment-modal");
+const orderDetails = document.getElementById("order-details");
+const closeModal = document.querySelector(".close");
+
+// 1. Fonction pour ouvrir la modale avec les infos du produit
+function versPaiement(methode, nomProduit, prix) {
+    // On affiche la modale
+    modal.style.display = "block";
+    
+    // On écrit les détails dans la modale
+    orderDetails.innerHTML = `Produit : <strong>${nomProduit}</strong><br>Prix : <strong>${prix} FCFA</strong>`;
+}
+
+// 2. Fonction pour fermer la modale en cliquant sur le X
+closeModal.onclick = function() {
+    modal.style.display = "none";
+}
+
+// 3. Fermer la modale si on clique n'importe où à l'extérieur
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+// 4. Fonctions pour les boutons finaux (Redirection vers ta nouvelle page)
+function confirmerPaiement() {
+    window.location.href = "paiement.html";
+}
+
+function payerOrangeMoney() {
+    window.location.href = "paiement.html";
+}
                 </div>
             </div>
         `;
