@@ -25,7 +25,7 @@ const catalogueDouxDoux = [
     { id: 23, titre: "Baskets Urbaines", prix: "18.500", cat: "Mode", img: "https://i.pinimg.com/736x/f1/eb/a2/f1eba2da56e538a8b38ed46193bb7648.jpg" },
     { id: 24, titre: "Adaptateur Secteur", prix: "2.500", cat: "Accessoires", img: "https://i.pinimg.com/1200x/16/fa/be/16fabe45085600244c7f5bf32675ea04.jpg" },
     { id: 25, titre: "Gourde Isotherme", prix: "6.000", cat: "Maison", img: "https://i.pinimg.com/1200x/ad/90/6c/ad906c92e7e5fce93b92268928bad22e.jpg" },
-    { id: 26, titre: "Tapis de souris XXL", prix: "5.500", cat: "Informatique", img: "https://via.placeholder.com/280" },
+    { id: 26, titre: "Tapis de souris XXL", prix: "5.500", cat: "Informatique", img: "https://i.pinimg.com/1200x/95/6e/b3/956eb31db7e85e26175700dce546b700.jpg" },
     { id: 27, titre: "Micro Cravate", prix: "4.500", cat: "Audio", img: "https://via.placeholder.com/280" },
     { id: 28, titre: "Manette PC/Android", prix: "11.000", cat: "Gaming", img: "https://via.placeholder.com/280" },
     { id: 29, titre: "Webcam HD", prix: "14.500", cat: "Informatique", img: "https://via.placeholder.com/280" },
