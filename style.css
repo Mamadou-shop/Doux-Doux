@@ -354,3 +354,84 @@ header {
     background-color: #333; /* Barre de recherche gris foncé pour rester dans le thème noir */
     color: white;
 }
+
+
+/* --- CONFIGURATION HEADER NOIR --- */
+.main-header {
+    background-color: #000000 !important;
+    padding: 12px 15px !important;
+}
+
+.header-top {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    margin-bottom: 15px;
+}
+
+/* Aligne le menu et le titre à gauche */
+.header-left {
+    display: flex !important;
+    align-items: center !important;
+    gap: 15px; /* Espace entre les barres et le nom */
+}
+
+.logo-site h1 {
+    color: #ffffff !important;
+    font-size: 20px !important;
+    margin: 0 !important;
+    white-space: nowrap !important;
+}
+
+/* Style des 3 barres (Menu Burger) */
+.menu-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.menu-icon span {
+    height: 2px;
+    width: 100%;
+    background-color: #ffffff !important;
+    border-radius: 5px;
+}
+
+/* Panier à droite avec zéro Orange */
+.header-right {
+    display: flex !important;
+    align-items: center !important;
+}
+
+.cart-container {
+    display: flex !important;
+    align-items: center !important;
+}
+
+.cart-text {
+    color: white;
+    font-size: 14px;
+    margin: 0 5px;
+}
+
+.cart-count {
+    background-color: #FF6600 !important; /* ORANGE */
+    color: white !important;
+    padding: 1px 6px !important;
+    border-radius: 50% !important;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+/* Recherche */
+#search-input {
+    width: 100% !important;
+    padding: 10px !important;
+    border-radius: 20px !important;
+    border: none !important;
+    background-color: #222 !important;
+    color: white !important;
+}
