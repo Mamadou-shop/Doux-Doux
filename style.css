@@ -232,3 +232,18 @@ h1, .logo-site h1 {
         gap: 20px !important;
     }
 }
+
+/* FORCE LE TITRE SUR UNE SEULE LIGNE */
+h1, .logo-site h1 {
+    white-space: nowrap !important; /* Interdit le retour à la ligne */
+    display: block !important;
+    width: 100% !important;
+    text-align: center !important;
+}
+
+@media (max-width: 600px) {
+    h1, .logo-site h1 {
+        font-size: 18px !important; /* Réduit la taille pour que ça tienne sur l'écran */
+        letter-spacing: -1px;       /* Resserre un peu les lettres */
+    }
+}
