@@ -151,3 +151,24 @@ function toggleMenu() {
         overlay.style.display = "block";
     }
 }
+
+
+function filtrerParCategorie(cat) {
+    const grille = document.querySelector('.product-grid'); // ou ta classe de conteneur
+    grille.innerHTML = ""; // On vide la grille
+
+    const resultats = produits.filter(p => p.categorie === cat);
+
+    resultats.forEach(p => {
+        grille.innerHTML += `
+            <div class="product-card">
+                <img src="${p.image}" alt="${p.nom}">
+                <h3>${p.nom}</h3>
+                <p>${p.prix} FCFA</p>
+                <button onclick="ajouterAuPanier()">Acheter</button>
+            </div>
+        `;
+    });
+
+    toggleMenu(); // Ferme le menu automatiquement après le clic
+}
