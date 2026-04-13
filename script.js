@@ -137,3 +137,17 @@ function chargerProduits() {
 }
 
 window.onload = chargerProduits;
+
+
+function toggleMenu() {
+    const menu = document.getElementById("side-menu");
+    const overlay = document.getElementById("overlay");
+
+    if (menu.style.width === "280px") {
+        menu.style.width = "0";
+        overlay.style.display = "none";
+    } else {
+        menu.style.width = "280px";
+        overlay.style.display = "block";
+    }
+}
