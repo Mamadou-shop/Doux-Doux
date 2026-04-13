@@ -435,3 +435,62 @@ header {
     background-color: #222 !important;
     color: white !important;
 }
+
+
+/* Style du menu latéral */
+.side-nav {
+    height: 100%;
+    width: 0; /* Caché par défaut */
+    position: fixed;
+    z-index: 2000;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+    transition: 0.3s; /* Animation fluide */
+    box-shadow: 2px 0 5px rgba(0,0,0,0.2);
+}
+
+.menu-header {
+    background-color: #232f3e; /* Bleu foncé type Amazon */
+    padding: 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-content h3 {
+    padding: 20px 20px 10px 20px;
+    font-size: 18px;
+    color: #111;
+}
+
+.menu-content a {
+    padding: 15px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #444;
+    display: block;
+    transition: 0.2s;
+}
+
+.menu-content a:hover {
+    background-color: #f3f3f3;
+}
+
+hr { border: 0; border-top: 1px solid #ddd; margin: 10px 0; }
+
+.closebtn { font-size: 36px; color: white; text-decoration: none; }
+
+/* Fond sombre */
+#overlay {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 1500;
+}
