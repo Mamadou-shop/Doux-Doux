@@ -172,3 +172,12 @@ function filtrerParCategorie(cat) {
 
     toggleMenu(); // Ferme le menu automatiquement après le clic
 }
+
+
+function ajouterAuPanier() {
+    document.getElementById("payment-modal").style.display = "block";
+}
+
+function closePayment() {
+    document.getElementById("payment-modal").style.display = "none";
+}
