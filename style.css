@@ -244,4 +244,59 @@ h1, .logo-site h1 {
     }
 }
 
+header {
+    background-color: #fff;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
 
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.logo-site h1 {
+    margin: 0;
+    font-size: 26px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Style des 3 barres (Menu) */
+.menu-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.menu-icon span {
+    height: 3px;
+    width: 100%;
+    background-color: #333;
+    border-radius: 10px;
+}
+
+/* Barre de recherche centrée */
+.search-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#search-input {
+    width: 90%;
+    padding: 12px 20px;
+    border: 1px solid #ddd;
+    border-radius: 25px; /* Forme arrondie comme sur ta capture */
+    outline: none;
+    font-size: 16px;
+    background-color: #f8f8f8;
+}
