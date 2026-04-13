@@ -300,3 +300,57 @@ header {
     font-size: 16px;
     background-color: #f8f8f8;
 }
+
+header {
+    background-color: #000000 !important; /* Fond du blog en noir */
+    padding: 15px;
+    color: white;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.logo-site h1 {
+    color: #ffffff !important; /* Titre en blanc pour ressortir sur le noir */
+    margin: 0;
+    font-size: 22px;
+    white-space: nowrap;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.cart-text {
+    font-weight: bold;
+    color: white;
+    margin-right: 5px;
+}
+
+.cart-count {
+    background-color: #ff6600; /* Le zéro en Orange */
+    color: white;
+    padding: 2px 8px;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+/* On change les barres du menu en blanc pour qu'elles soient visibles sur le noir */
+.menu-icon span {
+    background-color: white !important;
+}
+
+#search-input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    background-color: #333; /* Barre de recherche gris foncé pour rester dans le thème noir */
+    color: white;
+}
