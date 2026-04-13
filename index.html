@@ -93,7 +93,20 @@
 
     <script src="script.js"></script>
 
-    
+    <div id="payment-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-modal" onclick="closePayment()">&times;</span>
+        <h2>Finaliser votre achat</h2>
+        <p>Scannez le QR Code pour payer avec <strong>Wave</strong> ou <strong>Orange Money</strong></p>
+        
+        <img src="ton-qr-code.jpg" alt="QR Code Paiement" class="qr-code-img">
+        
+        <div class="payment-instructions">
+            <p>Une fois le paiement effectué, envoyez la capture d'écran sur WhatsApp.</p>
+            <button class="whatsapp-btn">Envoyer la preuve (WhatsApp)</button>
+        </div>
+    </div>
+</div>
 
 </body>
 </html>
