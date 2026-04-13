@@ -194,19 +194,23 @@ body {
     text-align: center;
 }
    
- /* FORCE LE TITRE SUR UNE SEULE LIGNE */
+/* FORCE LE TITRE SUR UNE SEULE LIGNE SANS COUPURE */
 h1, .logo-site h1 {
-    white-space: nowrap !important; /* Interdit le retour à la ligne */
-    display: block !important;
-    width: 100% !important;
-    text-align: center !important;
+    white-space: nowrap !important; /* Interdiction formelle de descendre */
+    font-size: 20px !important;      /* On baisse à 20px pour que ça tienne */
+    display: inline-block !important;
+    margin: 0 auto !important;
+    width: auto !important;
 }
 
-@media (max-width: 600px) {
-    h1, .logo-site h1 {
-        font-size: 18px !important; /* Réduit la taille pour que ça tienne sur l'écran */
-        letter-spacing: -1px;       /* Resserre un peu les lettres */
-    }
+/* On s'assure que le conteneur du titre prend toute la largeur */
+.header-container, .logo-site {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
+    padding: 10px 0 !important;
+}
 }  
 
 }
