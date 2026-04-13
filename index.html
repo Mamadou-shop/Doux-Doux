@@ -9,17 +9,32 @@
 </head>
 <body>
 
-    <nav style="background: #131921; padding: 10px 20px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 1000;">
-        <div style="color: white; font-weight: bold; font-size: 1.5rem;">Doux-Doux</div>
-        <div style="flex-grow: 1; margin: 0 20px;">
-            <input type="text" placeholder="Rechercher un produit..." style="width: 100%; padding: 10px; border-radius: 5px; border: none;">
+    <header>
+    <div class="header-top">
+        <div class="logo-site">
+            <h1>Doux-Doux</h1>
         </div>
-        <div class="cart-container" style="position: relative; cursor: pointer; color: white; display: flex; align-items: center; gap: 10px;">
-    <svg width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <circle cx="9" cy="21" r="1"></circle>
-        <circle cx="20" cy="21" r="1"></circle>
-        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
-    </svg>
+        
+        <div class="menu-icons">
+            <div class="cart-container">
+                <svg width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="9" cy="21" r="1"></circle>
+                    <circle cx="20" cy="21" r="1"></circle>
+                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                </svg>
+            </div>
+            <div class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="search-container">
+        <input type="text" id="search-input" placeholder="Rechercher un produit..." onkeyup="filtrerProduits()">
+    </div>
+</header>
     
     <span id="cart-count" style="background: #ff7900; color: white; border-radius: 50%; padding: 2px 7px; font-size: 12px; position: absolute; top: -12px; left: 15px; font-weight: bold; border: 2px solid #131921;">
         0
@@ -29,11 +44,11 @@
 </div>
     </nav>
 
-    <header>
+    <footer>
         <h2 style="text-align: center; margin: 40px 0; text-transform: uppercase; letter-spacing: 2px; font-family: 'Poppins', sans-serif;">
             L'Univers Doux-Doux
         </h2>
-    </header>
+    </footer>
 
     <main class="container">
         <div class="product-grid" id="product-grid">
